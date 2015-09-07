@@ -1,6 +1,6 @@
-### Menubar app 
+## Menubar app for OSX
 
-## Functions
+### Functions
 * creates the boxenite folder on install
 * installs the shell script 
 * provides user with feedback on connectivity and sync status
