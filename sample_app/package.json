@@ -1,0 +1,11 @@
+{
+  "name": "electron-test",
+  "version": "0.1.0",
+  "main": "main.js",
+  "dependencies": {
+    "chokidar": "1.0.5"
+  },
+  "devDependencies": {
+    "electron-rebuild": "^1.0.0"
+  }
+}
