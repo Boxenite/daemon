@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Boxenite</title>
+    <link rel="stylesheet" href="./css/app.css">
+  </head>
+  <body>
+    <script>
+      require('./app.js');
+      require('ipc').on('alert', function(e) { alert(e) });
+    </script>
+  </body>
+</html>

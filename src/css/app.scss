@@ -1,0 +1,36 @@
+@import '../../node_modules/materialize-css/sass/components/normalize';
+@import '../../node_modules/materialize-css/sass/components/color';
+
+$primary-color-light: true !default;
+$secondary-color: color("materialize-red", "lighten-2") !default;
+
+@import '../../node_modules/materialize-css/sass/materialize';
+
+$so-grey: #2c2c2c;
+
+body {
+  background-color: $so-grey;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  padding-top: 20vh;
+}
+
+.boxenite-logo {
+  font-size: 24px;
+}
+
+.events {
+  .event {
+    border-top: 1px solid $secondary-color;
+
+    .event-label {
+      font-size: 13px;
+      color: $secondary-color;
+    }
+  }
+}
+
+.btn,
+&.btn:hover {
+  box-shadow: none;
+}
