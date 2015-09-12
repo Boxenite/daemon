@@ -36,6 +36,8 @@
     "electron-prebuilt": "^0.28.3",
     "lodash": "^3.10.1",
     "materialize-css": "Dogfalo/materialize#753f7bcf1d51ac9b1064520752649d64579a3eb4",
+    "react": "0.13.3",
+    "react-router": "0.13.3",
     "request-promise": "^0.4.2"
   }
 }

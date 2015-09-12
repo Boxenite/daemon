@@ -40,7 +40,7 @@ gulp.task 'electron', ->
       release: './release',
       cache: './cache',
       version: 'v0.28.3',
-      packaging: true,
+      packaging: false,
       platforms: ['win32-ia32', 'darwin-x64'],
       platformResources:
         darwin:
