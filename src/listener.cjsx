@@ -4,6 +4,8 @@ _ = require('lodash')
 ipc = require('ipc')
 request = require('request-promise')
 
+Server = require './server'
+
 module.exports =
 Listener = React.createClass
   getInitialState: ->
@@ -16,6 +18,8 @@ Listener = React.createClass
       @setState(logs: updated_logs)
 
     ipc.send('start-listening-to-dir', dir: @props.dir)
+
+    new Server(@props.server_url).run()
   render: ->
     <div className='container'>
       <div className='row events'>

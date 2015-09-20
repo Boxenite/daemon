@@ -11,7 +11,6 @@ module.exports = Setup = React.createClass({
     };
   },
   changeDir: function(e) {
-    debugger;
     return this.setState({
       dir: e.target.value
     });
@@ -21,7 +20,6 @@ module.exports = Setup = React.createClass({
     return this.props.onListen(this.state.dir);
   },
   render: function() {
-    debugger;
     return React.createElement("div", {
       "className": 'container'
     }, React.createElement("div", {

@@ -32,8 +32,10 @@
     "vinyl-transform": "^1.0.0"
   },
   "dependencies": {
+    "body-parser": "^1.14.0",
     "chokidar": "^1.0.5",
     "electron-prebuilt": "^0.28.3",
+    "express": "^4.13.3",
     "lodash": "^3.10.1",
     "materialize-css": "Dogfalo/materialize#753f7bcf1d51ac9b1064520752649d64579a3eb4",
     "react": "0.13.3",

@@ -1,4 +1,4 @@
-var Listener, React, Router, _, ipc, request;
+var Listener, React, Router, Server, _, ipc, request;
 
 Router = require('react-router');
 
@@ -9,6 +9,8 @@ _ = require('lodash');
 ipc = require('ipc');
 
 request = require('request-promise');
+
+Server = require('./server');
 
 module.exports = Listener = React.createClass({
   getInitialState: function() {
@@ -28,9 +30,10 @@ module.exports = Listener = React.createClass({
         });
       };
     })(this));
-    return ipc.send('start-listening-to-dir', {
+    ipc.send('start-listening-to-dir', {
       dir: this.props.dir
     });
+    return new Server(this.props.server_url).run();
   },
   render: function() {
     return React.createElement("div", {
